@@ -1,8 +1,14 @@
 require('rspec')
-require('anagram?')
+require('anagram')
+require('pry')
 
-describe('Fixnum#coin_combos') do
-  it('returns the number of quarters required to add up to an input that is divisible by 25') do
-    expect(75.coin_combos).to(eq([3,0,0,0]))
+describe('String#anagram') do
+  it('returns the input word as an array element if it is an anagram of the argument word') do
+    expect('dog'.anagram('god')).to(eq(['dog']))
   end
+
+  it('returns any of the input words (as an array) that are an anagram of the argument word') do
+    expect('dog goo odg'.anagram('god')).to(eq(['dog', 'odg']))
+  end
+
 end
