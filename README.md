@@ -2,7 +2,7 @@
 
 ## Description
 
-#### _A website for making anagrams._
+#### _A website that checks if a given sentence contains any anagrams of a given word._
 
 #### By _*Bill Klinkow and Devin Ludwig*_
 
